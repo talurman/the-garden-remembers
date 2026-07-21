@@ -1,6 +1,6 @@
 # Third Interaction — The Quiet Shelter
 
-## Implementation status — Steps 0–4 complete
+## Implementation status — Steps 0–5 complete
 
 - The five original action identities are frozen as `support`, `reach`, `water`, `call` and `leave`, with exact mappings back to the legacy IDs.
 - Four actions resolve through a physical sequence; giving space resolves only after physical departure. Passing without opening the prompt remains a valid route.
@@ -15,7 +15,8 @@
 - **Step 4 complete:** Sit nearby, Offer a hand, Leave water and Use the call point now share the same five-beat physical timing contract: attention, cause, response, control release and persistent trace. Give them space remains movement-led and resolves only after the downstream boundary is physically crossed.
 - The branches use paired presence rings and a settling seat, an offered hand with a restrained boundary gesture, a repositioned ceramic vessel with lasting water refraction, or a weighted receiver with an indigo-gold acknowledgement. The distance route settles toward sage, ivory and clearer negative space.
 - Every route records only physical interaction and environmental-contact events. No branch praises, blames, diagnoses or claims that the person improved.
-- **Next step:** Step 5, propagating each shelter choice through character cloth, shelter materials, water, path, planting, downstream paper and the final moon gate.
+- **Step 5 complete:** every shelter route now releases one broad, persistent pigment memory through seven connected layers: character cloth, shelter material, shallow water, path, planting, downstream paper and the final moon gate. Each action keeps a distinct, Art Bible-aligned palette and motion signature without particles, rewards or judgment.
+- **Next step:** Step 6, preserving shelter memory across departure and return while integrating its factual observations into the final personality reflection.
 
 ## Purpose
 

@@ -49,7 +49,7 @@ npm test
 
 This runs the complete suite under `tests/`, covering movement, input parity, encounter routes, neutral consequence contracts, factual memory, delayed echoes, reflection, and threshold behavior.
 
-Current verified result: **77/77 tests passing**.
+Current verified result: **81/81 tests passing**.
 
 ## Architecture
 

@@ -1,0 +1,19 @@
+Can an environment reveal something about us without ever asking who we are?
+
+I’m a product designer working in educational technology, and that question became The Garden Remembers: a short, first-person experience where the world quietly observes behavior instead of collecting answers.
+
+There is no quiz, score, diagnosis, or correct route. As you walk, the garden notices what you actually do: where you pause, what you approach, whether you return, and how you respond when a situation is uncertain.
+
+Here, I find a lost wallet. I can carry it, leave it, hide it, bring it to the stall, or photograph and report it. I choose to report it. The response is physical rather than judgmental: paper lifts, color travels, and the decision becomes part of the landscape.
+
+At the paper threshold, I stop and listen. The world preserves that moment as another quiet trace.
+
+Farther on, someone is sitting alone and has not asked for anything. The experience offers five equally complete choices. I leave water within reach. Turquoise and mineral-gold pigment move through the vessel, cloth, shallow water, path, planting, downstream paper, and the final gate. The game never claims the choice was right, or tells me how the person felt.
+
+At the end, these factual observations become one reflective portrait. The goal is not to classify the player, but to help them notice patterns in their own behavior.
+
+I began with an early HTML prototype and virtually no experience building an interactive WebGL world. Codex became my development partner: helping me preserve the creative idea while restructuring the experience, implementing interactions and animation, debugging input and state, and running fresh browser tests.
+
+GPT-5.6 helped me reason across the whole system: compare branches for equal depth, find lifecycle edge cases, translate non-judgmental design rules into testable contracts, and keep every visible memory tied to a real player action. The current build passes eighty-one automated checks. The final creative direction and every interaction decision remained human-led.
+
+The Garden doesn’t tell you who you are. It helps you notice who you’ve been.
