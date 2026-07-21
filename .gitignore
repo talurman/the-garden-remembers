@@ -3,6 +3,7 @@ node_modules/
 public/
 tmp/
 .firebase-cache/
+.firebase/
 .pnpm-home/
 .tools/
 video/captures/

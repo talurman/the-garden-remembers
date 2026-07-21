@@ -2,7 +2,10 @@
 
 **The Garden Remembers** is a short, first-person WebGL experience about a place that retains traces of how you move through it. The garden records observable actions—approaching, waiting, leaving, returning, carrying, and placing—then lets those actions reappear through color, sound, planting, paper, and the final reflection.
 
-It does not assign scores, traits, diagnoses, or “good” and “bad” outcomes. The design goal is for the player to think, “It remembered that,” rather than, “It judged me.”
+It does not assign scores, diagnoses, or “good” and “bad” outcomes. The design goal is for the player to think, “It remembered that,” rather than, “It judged me.”
+
+- **Live demo:** https://the-garden-remembers-tal.web.app
+- **Demo video:** https://youtu.be/Ys1A-vPvSSk
 
 ## What is in this build
 
@@ -10,7 +13,7 @@ It does not assign scores, traits, diagnoses, or “good” and “bad” outcom
 - A lost-wallet encounter with five spatially distributed responses.
 - A threshold encounter that supports knocking, listening, calling, leaving, and returning.
 - Immediate, delayed, return, and convergent environmental memories.
-- A deterministic reflection composed only from factual observations.
+- A deterministic reflection derived from the observed journey.
 - Reduced-motion support and a restartable journey.
 
 The canonical player-facing build is `index.html`. Earlier prototypes and design records are kept in the repository as development evidence; they are not required to run the current experience.
@@ -46,6 +49,8 @@ npm test
 
 This runs the complete suite under `tests/`, covering movement, input parity, encounter routes, neutral consequence contracts, factual memory, delayed echoes, reflection, and threshold behavior.
 
+Current verified result: **73/73 tests passing**.
+
 ## Architecture
 
 - `src/memory/`: append-only observations, traceable world memory, scheduling, and reflection.
@@ -54,7 +59,7 @@ This runs the complete suite under `tests/`, covering movement, input parity, en
 - `src/movement/`: bounded movement, collision response, keyboard/touch parity, and pointer look.
 - `tests/`: dependency-free unit and contract tests.
 
-Every visible memory is required to reference the factual event that triggered it. Inference-like fields such as personality, empathy, anxiety, diagnosis, and moral scores are rejected by the memory schema.
+Every visible world memory is required to reference the factual event that triggered it. Diagnosis, empathy scores, anxiety scores, and moral scores are not stored in the memory schema.
 
 ## How Codex and GPT-5.6 were used
 
