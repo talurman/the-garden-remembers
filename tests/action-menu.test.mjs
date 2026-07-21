@@ -11,3 +11,13 @@ test('four-action menu supports keyboard, pointer, and Escape', () => {
   menu.close(); menu.show(); buttons[2].click(); assert.deepEqual(chosen,['listen','call']);
   menu.handleKey('Escape'); assert.equal(dismissed.length,1);
 });
+
+test('five equal circle actions wrap in both directions and remain pointer accessible',()=>{
+  const root=element(),buttons=['intervene','join','distract','call','leave'].map(element),chosen=[];
+  const menu=createActionMenu({root,buttons,onChoose:action=>chosen.push(action),nextFrame:callback=>callback(),schedule:()=>1,cancelSchedule:()=>{}});
+  menu.show();menu.handleKey('ArrowLeft');menu.handleKey('Enter');
+  assert.deepEqual(chosen,['leave']);
+  menu.close();menu.show();buttons[2].click();
+  assert.deepEqual(chosen,['leave','distract']);
+  assert.equal(buttons.length,5);
+});

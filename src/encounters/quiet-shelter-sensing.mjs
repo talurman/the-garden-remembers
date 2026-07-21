@@ -9,9 +9,9 @@ export function senseQuietShelter({player,forward,target,farDistance=18,nearDist
   const proximity=clamp01((farDistance-distance)/Math.max(.001,farDistance-nearDistance));
   const facing=clamp01((dot-.12)/.84);
   const presence=proximity*(.38+facing*.62);
-  const promptEligible=distance<4.9&&facing>.55;
+  const promptEligible=distance<3.6&&facing>.66;
   return Object.freeze({
     distance,proximity,facing,presence,promptEligible,
-    zone:distance<4.9?'close':distance<9.5?'near':distance<farDistance?'distant':'outside'
+    zone:distance<3.6?'close':distance<9.5?'near':distance<farDistance?'distant':'outside'
   });
 }

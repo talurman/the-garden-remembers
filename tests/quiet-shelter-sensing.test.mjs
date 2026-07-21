@@ -14,12 +14,18 @@ test('quiet shelter presence grows with proximity and orientation',()=>{
 });
 
 test('shelter prompt requires both close distance and deliberate orientation',()=>{
-  const facing=senseQuietShelter({player:{x:-2.4,z:-112.4},forward:{x:-.72,z:-.7},target});
-  const turnedAway=senseQuietShelter({player:{x:-2.4,z:-112.4},forward:{x:.72,z:.7},target});
+  const facing=senseQuietShelter({player:{x:-3.2,z:-113.3},forward:{x:-.72,z:-.7},target});
+  const turnedAway=senseQuietShelter({player:{x:-3.2,z:-113.3},forward:{x:.72,z:.7},target});
   const tooFar=senseQuietShelter({player:{x:0,z:-106},forward:{x:-.58,z:-.82},target});
   assert.equal(facing.promptEligible,true);
   assert.equal(turnedAway.promptEligible,false);
   assert.equal(tooFar.promptEligible,false);
+});
+
+test('the shelter does not offer choices from the wider observation field',()=>{
+  const observing=senseQuietShelter({player:{x:-2.4,z:-112.4},forward:{x:-.72,z:-.7},target});
+  assert.ok(observing.presence>0);
+  assert.equal(observing.promptEligible,false);
 });
 
 test('the shelter remains text-quiet outside its authored range',()=>{

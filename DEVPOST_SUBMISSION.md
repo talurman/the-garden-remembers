@@ -15,7 +15,7 @@ A living garden that remembers how you move through it—without scoring or judg
 - Live demo: `https://the-garden-remembers-tal.web.app`
 - Demo video: `https://youtu.be/Ys1A-vPvSSk`
 - Code repository: `https://github.com/talurman/the-garden-remembers`
-- Codex `/feedback` Session ID: `[ADD SESSION ID]`
+- Codex `/feedback` Session ID: `019f8379-8cbe-7911-ab1f-255c14653ef6`
 
 ## Inspiration
 
@@ -23,7 +23,7 @@ I wanted to explore a simple question: what if a game could remember you without
 
 ## What it does
 
-The Garden Remembers is a short first-person WebGL experience. You walk through a hand-painted garden, encounter a lost wallet and a paper threshold, and decide what to do through movement and proximity rather than a quiz. The garden records factual actions such as approaching, waiting, carrying, placing, leaving, and returning.
+The Garden Remembers is a short first-person WebGL experience. You walk through a hand-painted garden, encounter a lost wallet and a paper threshold, then enter a shared field containing a quiet shelter and a social circle. You decide what to do through movement and proximity rather than a quiz. The garden records factual actions such as approaching, waiting, carrying, placing, leaving, redirecting attention, and returning.
 
 Those actions come back later. Pigment travels across the path, planting changes after you have moved on, sounds recur in new places, and the final paper reflection is assembled from events the garden actually observed. Every route receives a complete response; there are no points, moral labels, or “correct” endings.
 
@@ -31,7 +31,7 @@ Those actions come back later. Pigment travels across the path, planting changes
 
 The experience is a dependency-light static web app built with HTML, CSS, JavaScript modules, and Three.js. I separated movement, interaction, encounter state, and memory into testable modules. The memory pipeline has four layers: immediate echo, delayed memory, return recognition, and convergence near the ending.
 
-The central rule is traceability. Every visible world memory must point back to a factual observation. The schema rejects diagnoses, empathy scores, anxiety scores, and moral scores. A 77-test Node suite covers movement, touch and keyboard parity, encounter branches, consequence timing, factual memory, and reflection.
+The central rule is traceability. Every visible world memory must point back to a factual observation. The schema rejects diagnoses, empathy scores, anxiety scores, and moral scores. A 143-test Node suite covers movement, touch and keyboard parity, all four encounter systems, consequence timing, factual memory, reflection, world composition, accessibility, and release quality.
 
 ## How I used Codex and GPT-5.6
 
@@ -47,7 +47,7 @@ The second challenge was continuity. The earlier version was a set of isolated s
 
 ## Accomplishments
 
-I am proud that the reflection is grounded in the journey without reading like a transaction log. I am also proud that the same experience works with keyboard, pointer, and touch input, and that 77 automated checks protect the design's non-diagnostic boundary.
+I am proud that the reflection is grounded in the journey without reading like a transaction log. I am also proud that the same experience works with keyboard, pointer, and touch input, and that 143 automated checks protect both its technical behavior and the design's non-diagnostic boundary.
 
 ## What I learned
 

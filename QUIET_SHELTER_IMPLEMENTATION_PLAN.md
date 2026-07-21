@@ -1,6 +1,6 @@
 # Third Interaction — The Quiet Shelter
 
-## Implementation status — Steps 0–5 complete
+## Implementation status — Steps 0–8 complete
 
 - The five original action identities are frozen as `support`, `reach`, `water`, `call` and `leave`, with exact mappings back to the legacy IDs.
 - Four actions resolve through a physical sequence; giving space resolves only after physical departure. Passing without opening the prompt remains a valid route.
@@ -16,7 +16,10 @@
 - The branches use paired presence rings and a settling seat, an offered hand with a restrained boundary gesture, a repositioned ceramic vessel with lasting water refraction, or a weighted receiver with an indigo-gold acknowledgement. The distance route settles toward sage, ivory and clearer negative space.
 - Every route records only physical interaction and environmental-contact events. No branch praises, blames, diagnoses or claims that the person improved.
 - **Step 5 complete:** every shelter route now releases one broad, persistent pigment memory through seven connected layers: character cloth, shelter material, shallow water, path, planting, downstream paper and the final moon gate. Each action keeps a distinct, Art Bible-aligned palette and motion signature without particles, rewards or judgment.
-- **Next step:** Step 6, preserving shelter memory across departure and return while integrating its factual observations into the final personality reflection.
+- **Step 6 complete:** resolved compositions persist after departure, returning produces one restrained cloth, paper, water and gaze recognition, and the contextual choice never reopens. Local pigment retains priority while earlier threshold and wallet memories remain quieter downstream layers.
+- **Step 7 complete:** the final portrait now uses factual shelter evidence—observation time, distance, stillness, retreat, return and the completed physical route—to refine deliberation, responsiveness, self-direction and adaptability. The player sees one deterministic personality paragraph without actions, scores, dimensions or moral claims.
+- **Step 8 complete:** the five branches, physical departure, return, Escape dismissal, complete three-encounter journey, keyboard/pointer/touch input, muted audio, reduced motion, persistent memory, long-session movement and final reflection recovery have passed regression and browser QA.
+- **Completion gate passed:** the Quiet Shelter is ready. The next implementation phase may begin with the original fourth encounter, The Circle.
 
 ## Purpose
 

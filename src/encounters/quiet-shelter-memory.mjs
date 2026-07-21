@@ -1,4 +1,11 @@
 const SURFACES=Object.freeze(['cloth','shelter','water','path','planting','downstream-paper','moon-gate']);
+export const QUIET_SHELTER_MEMORY_LAYER_WEIGHTS=Object.freeze({
+  local:.34,
+  path:.28,
+  downstream:.22,
+  moonGate:.18,
+  returnRecognition:.16
+});
 
 const PROFILES=Object.freeze({
   support:{action:'support',outcome:'shared-presence',palette:Object.freeze([0x91aec4,0xefe4ce]),tempo:.72,visualId:'paired-rhythms',frequencies:Object.freeze([196,246.94,329.63])},
@@ -34,6 +41,19 @@ export function sampleQuietShelterMemory(memory,now){
     }),
     complete:elapsedMs>=memory.durationMs,settledOpacity:.22
   });
+}
+
+export function createQuietShelterReturn(action,startedAt,{timeScale=1}={}){
+  const profile=quietShelterMemoryProfile(action);
+  if(!Number.isFinite(startedAt))throw new Error('Quiet shelter return requires a finite start time.');
+  if(!Number.isFinite(timeScale)||timeScale<=0)throw new Error('timeScale must be greater than zero.');
+  return Object.freeze({action:profile.action,visualId:profile.visualId,startedAt,canonicalDurationMs:2600,durationMs:2600/timeScale});
+}
+
+export function sampleQuietShelterReturn(memory,now){
+  const progress=clamp01((Math.max(0,Number(now)-memory.startedAt))/memory.durationMs);
+  const arrival=range(progress,0,.3),recognition=range(progress,.12,.58),settling=range(progress,.48,1);
+  return Object.freeze({progress,arrival,recognition:recognition*(1-settling*.72),settling,complete:progress>=1});
 }
 
 export const QUIET_SHELTER_MEMORY_ACTIONS=Object.freeze(Object.keys(PROFILES));

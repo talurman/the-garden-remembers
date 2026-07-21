@@ -1,5 +1,7 @@
 # Art Bible V4 — Characters and Interactive Objects
 
+> Character silhouettes and clothing are superseded by `ART_BIBLE_V5_CHARACTER_DIRECTION.md`. Object, interaction, motion and environmental-response rules in this document remain active.
+
 ## Status
 
 This is a locked production standard for the existing wallet encounter and every interaction added after it. It is based on:

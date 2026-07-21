@@ -12,6 +12,7 @@ It does not assign scores, diagnoses, or “good” and “bad” outcomes. The 
 - A continuous, explorable Three.js garden with keyboard, pointer, and touch controls.
 - A lost-wallet encounter with five spatially distributed responses.
 - A threshold encounter that supports knocking, listening, calling, leaving, and returning.
+- A shared encounter field containing a quiet shelter and a five-route social circle, both of which can be approached, passed, or revisited.
 - Immediate, delayed, return, and convergent environmental memories.
 - A deterministic reflection derived from the observed journey.
 - Reduced-motion support and a restartable journey.
@@ -47,9 +48,9 @@ The logic tests use Node's built-in test runner and have no package dependencies
 npm test
 ```
 
-This runs the complete suite under `tests/`, covering movement, input parity, encounter routes, neutral consequence contracts, factual memory, delayed echoes, reflection, and threshold behavior.
+This runs the complete suite under `tests/`, covering movement, input parity, encounter routes, neutral consequence contracts, factual memory, delayed echoes, reflection, world composition, release quality, and all four encounter systems.
 
-Current verified result: **81/81 tests passing**.
+Current verified result: **143/143 tests passing**.
 
 ## Architecture
 

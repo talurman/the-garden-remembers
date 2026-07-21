@@ -24,3 +24,41 @@ test('revisits and mixed investigation increase adaptability without exposing a 
   assert.ok(revisiting.dimensions.adaptability>direct.dimensions.adaptability);
   assert.doesNotMatch(revisiting.paragraph,/\b\d+(?:\.\d+)?%?\b/);
 });
+
+test('quiet shelter evidence meaningfully refines the personality portrait',()=>{
+  const common={movement:{distance:130,lateral:8,turn:10},events:[
+    {type:'location.entered',locationId:'quiet-shelter',occurredAt:1000},
+    {type:'interaction.started',locationId:'quiet-shelter',occurredAt:6500},
+    {type:'movement.still',locationId:'quiet-shelter',durationMs:3600}
+  ],walletOutcome:'carried',threshold:{counts:{listen:0,knock:0,call:0},resolvedAction:'leave'}};
+  const presence=calculatePersonalityReflection({...common,shelter:{resolvedAction:'support'}});
+  const distance=calculatePersonalityReflection({...common,shelter:{resolvedAction:'leave'}});
+  assert.notEqual(presence.paragraph,distance.paragraph);
+  assert.ok(presence.dimensions.responsiveness>distance.dimensions.responsiveness);
+  assert.ok(distance.dimensions.selfDirection>presence.dimensions.selfDirection);
+});
+
+test('shelter return and retreat evidence increases adaptability without exposing the route',()=>{
+  const base={movement:{distance:100,lateral:5,turn:7},walletOutcome:'returned',threshold:{counts:{},resolvedAction:'call'},shelter:{resolvedAction:'water'}};
+  const direct=calculatePersonalityReflection({...base,events:[]});
+  const returning=calculatePersonalityReflection({...base,events:[
+    {type:'movement.retreated',locationId:'quiet-shelter'},
+    {type:'location.revisited',locationId:'quiet-shelter',metadata:{return:true}}
+  ]});
+  assert.ok(returning.dimensions.adaptability>direct.dimensions.adaptability);
+  assert.doesNotMatch(returning.paragraph,/quiet shelter|water|call point|action id|support/i);
+});
+
+test('dual-field attention and circle return refine the portrait without exposing encounter mechanics',()=>{
+  const common={movement:{distance:125,lateral:12,turn:18},walletOutcome:'reported',threshold:{counts:{listen:1},resolvedAction:'leave'},shelter:{resolvedAction:'leave'},circle:{resolvedAction:'call'}};
+  const direct=calculatePersonalityReflection({...common,events:[],dualField:{meaningfulSwitches:0}});
+  const reflective=calculatePersonalityReflection({...common,events:[
+    {type:'attention.oriented',locationId:'shared-choice-field',metadata:{evidence:'attention.sustained'}},
+    {type:'attention.oriented',locationId:'shared-choice-field',metadata:{evidence:'attention.switched'}},
+    {type:'movement.retreated',locationId:'shared-choice-field',metadata:{evidence:'movement.partial-retreat'}},
+    {type:'location.revisited',locationId:'the-circle',metadata:{return:true}}
+  ],dualField:{meaningfulSwitches:1}});
+  assert.ok(reflective.dimensions.adaptability>direct.dimensions.adaptability);
+  assert.ok(reflective.dimensions.deliberation>direct.dimensions.deliberation);
+  assert.doesNotMatch(reflective.paragraph,/circle|shelter|bully|intervene|join|distract|action id|first|second/i);
+});
