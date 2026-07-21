@@ -2,7 +2,7 @@
 
 ## Verified in this workspace — 2026-07-21
 
-- [x] `node --test tests/*.test.mjs`: 58/58 tests pass.
+- [x] `node --test tests/*.test.mjs`: 68/68 tests pass.
 - [x] Fresh static-server load succeeds.
 - [x] WebGL canvas initializes and the opening interaction works.
 - [x] Fresh browser run has no warnings or errors.

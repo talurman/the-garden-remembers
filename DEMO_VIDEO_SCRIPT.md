@@ -28,9 +28,9 @@ Keep the final export below three minutes. Record the voiceover; remove typing, 
 
 ## 1:55–2:25 — Codex and GPT-5.6
 
-**Visual:** Show the module folders, a brief Codex session shot, and the passing test output. Make the words ‘Codex’, ‘GPT-5.6’, and ‘58 tests passing’ readable on screen.
+**Visual:** Show the module folders, a brief Codex session shot, and the passing test output. Make the words ‘Codex’, ‘GPT-5.6’, and ‘68 tests passing’ readable on screen.
 
-**Voiceover:** “I used Codex as the active development workspace to audit the original prototype, refactor the memory architecture, implement and debug the continuous experience, and run regression checks. GPT-5.6 helped me reason across the whole system—comparing every branch for equal depth, finding state and input edge cases, and turning the non-judgmental design rules into automated tests. I kept the creative direction human-led and verified the work with 58 passing tests and clean browser runs.”
+**Voiceover:** “I used Codex as the active development workspace to audit the original prototype, refactor the memory architecture, implement and debug the continuous experience, and run regression checks. GPT-5.6 helped me reason across the whole system—comparing every branch for equal depth, finding state and input edge cases, and turning the non-judgmental design rules into automated tests. I kept the creative direction human-led and verified the work with 68 passing tests and clean browser runs.”
 
 ## 2:25–2:35 — Close
 
