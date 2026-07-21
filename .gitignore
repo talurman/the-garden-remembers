@@ -1,0 +1,15 @@
+.DS_Store
+node_modules/
+public/
+tmp/
+.firebase-cache/
+.pnpm-home/
+
+# Generated art-book exports are not needed to run or judge the web build.
+output/
+assets/
+
+# Keep local Firebase selection and debug files out of the public repository.
+.firebaserc
+firebase-debug.log
+firebase-debug.*.log
