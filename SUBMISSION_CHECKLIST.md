@@ -9,13 +9,17 @@
 - [x] README includes setup, controls, tests, architecture, privacy, Firebase deployment, and Codex/GPT-5.6 usage.
 - [x] Devpost-ready description drafted in `DEVPOST_SUBMISSION.md`.
 - [x] Under-three-minute voiceover and shot plan drafted in `DEMO_VIDEO_SCRIPT.md`.
+- [x] 1:53 narrated demo rendered at 1280×720 with real gameplay, Codex, GPT-5.6, and 68-test proof.
+- [x] Final video frame samples, audio stream, loudness, duration, and browser runtime checked.
 - [x] Minimal Firebase Hosting release is reproducible with `npm run build`.
+- [x] Public GitHub repository created at `https://github.com/talurman/the-garden-remembers`.
+- [x] Individual Devpost team verified; no teammate invitations are pending.
 
 ## Still requires an external account or final human review
 
 - [ ] Deploy `public/` to Firebase Hosting and paste the live URL into Devpost.
-- [ ] Create/push the GitHub repository. If private, invite `testing@devpost.com` and `build-week-event@openai.com`.
-- [ ] Record the demo, watch the entire exported file, and confirm the voiceover says both “Codex” and “GPT-5.6.”
+- [ ] Complete GitHub CLI authorization and push the local commits.
+- [ ] Optionally replace the generated narration with a personal voice recording before upload.
 - [ ] Upload to YouTube as Public or Unlisted; wait for HD processing; verify the link while signed out.
 - [ ] Run `/feedback` from the official Codex slash menu in the session where most work was done; paste its Session ID into Devpost.
 - [ ] Read the final Devpost copy out loud and make any personal wording changes.
