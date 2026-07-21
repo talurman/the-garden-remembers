@@ -88,3 +88,9 @@ firebase deploy --only hosting
 ```
 
 `firebase.json` serves the generated `public/` directory and applies long-lived caching only to the immutable module files.
+
+## License
+
+Copyright © 2026 Tal Urman. All rights reserved.
+
+This is proprietary source code published for OpenAI Build Week evaluation. No permission is granted to copy, modify, distribute, commercialize, or reuse the project, including for AI or machine-learning training. See [LICENSE](LICENSE) for the complete terms.
