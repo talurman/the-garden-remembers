@@ -1,6 +1,6 @@
 # Third Interaction — The Quiet Shelter
 
-## Implementation status — Steps 0–3 complete
+## Implementation status — Steps 0–4 complete
 
 - The five original action identities are frozen as `support`, `reach`, `water`, `call` and `leave`, with exact mappings back to the legacy IDs.
 - Four actions resolve through a physical sequence; giving space resolves only after physical departure. Passing without opening the prompt remains a valid route.
@@ -12,7 +12,10 @@
 - **Step 3 complete:** proximity and gaze now control a restrained spatial breath response shared by the figure, shelter textile, handmade paper and shallow-water rings. The scene records factual approach, retreat, orientation, stillness, departure and return signals.
 - The five-choice contextual prompt appears only at close range while facing the person. It remains absent at a distance, and Escape closes it and restores control immediately.
 - The camera/view convention was corrected so mouse look, keyboard turning, movement direction, interaction sensing and cinematic focus now agree.
-- **Next step:** Step 4, implementing five equally substantial physical action sequences and resolving the currently staged shelter choice through visible cause and response.
+- **Step 4 complete:** Sit nearby, Offer a hand, Leave water and Use the call point now share the same five-beat physical timing contract: attention, cause, response, control release and persistent trace. Give them space remains movement-led and resolves only after the downstream boundary is physically crossed.
+- The branches use paired presence rings and a settling seat, an offered hand with a restrained boundary gesture, a repositioned ceramic vessel with lasting water refraction, or a weighted receiver with an indigo-gold acknowledgement. The distance route settles toward sage, ivory and clearer negative space.
+- Every route records only physical interaction and environmental-contact events. No branch praises, blames, diagnoses or claims that the person improved.
+- **Next step:** Step 5, propagating each shelter choice through character cloth, shelter materials, water, path, planting, downstream paper and the final moon gate.
 
 ## Purpose
 
