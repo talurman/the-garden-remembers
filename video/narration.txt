@@ -1,11 +1,11 @@
-This is The Garden Remembers, a first-person experience about a place that notices how you move through it. It remembers observable actions, but it never turns them into a score, diagnosis, or good and bad ending.
+This is The Garden Remembers, a first-person experience where a place notices what happened without turning it into a score.
 
-I move freely through a continuous Three.js garden. My footsteps leave pigment, and encounters are discovered through space rather than a quiz. Here, finding the wallet opens five possibilities around the environment. Approaching one gives me context, but I can always keep exploring.
+The first encounter begins with a lost wallet. The player can approach different possibilities, ask for context, or keep exploring. Every decision receives an equally complete response.
 
-When I choose, the garden records only what happened: where I approached, what I carried or placed, whether I left, and whether I returned. The response has four layers: an immediate echo, a delayed change after I move on, recognition if I return, and a convergent memory near the ending. Every route gets a complete response, so beauty is never used as a reward for the right answer.
+The consequence does not end at the prompt. It moves through water, paper, flowers, and the path, then returns later as memory.
 
-The threshold supports listening, knocking, calling, or simply walking on. The final reflection is deterministic and built from observations the garden actually recorded. The underlying schema rejects personality traits, empathy scores, anxiety labels, diagnoses, and other unsupported inferences.
+At the paper threshold, the player can listen, knock, use the call point, or continue onward. The garden records only observable events and uses them to build its final reflection.
 
-I used Codex as the active development workspace to audit the original prototype, refactor the memory architecture, implement and debug the continuous experience, and run regression checks. GPT-5.6 helped me reason across the whole system: comparing every branch for equal depth, finding state and input edge cases, and turning the non-judgmental design rules into automated tests. I kept the creative direction human-led and verified the work with sixty-eight passing tests and clean browser runs.
+I used Codex to develop, test, debug, and prepare the release. GPT-5.6 helped reason across every branch and translate the non-judgmental design rules into automated checks.
 
-The result is a garden that does not tell you who you are. It simply shows that your presence left a trace.
+The result is a garden that remembers your presence without declaring a correct ending.

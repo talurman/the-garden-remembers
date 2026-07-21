@@ -9,7 +9,7 @@
 - [x] README includes setup, controls, tests, architecture, privacy, Firebase deployment, and Codex/GPT-5.6 usage.
 - [x] Devpost-ready description drafted in `DEVPOST_SUBMISSION.md`.
 - [x] Under-three-minute voiceover and shot plan drafted in `DEMO_VIDEO_SCRIPT.md`.
-- [x] 1:53 narrated demo rendered at 1280×720 with real gameplay, Codex, GPT-5.6, and 68-test proof.
+- [x] 0:58 narrated interaction demo rendered at 1280×720 with graded game captures, Codex, GPT-5.6, and 70-test proof.
 - [x] Final video frame samples, audio stream, loudness, duration, and browser runtime checked.
 - [x] Minimal Firebase Hosting release is reproducible with `npm run build`.
 - [x] Public GitHub repository created at `https://github.com/talurman/the-garden-remembers`.

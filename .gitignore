@@ -6,6 +6,7 @@ tmp/
 .pnpm-home/
 .tools/
 video/captures/
+video/walkthrough/
 video/frames/
 video/output/
 
