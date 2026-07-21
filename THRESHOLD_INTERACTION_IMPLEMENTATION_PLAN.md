@@ -12,6 +12,7 @@
 - **Step 6 complete:** threshold color and physical traces persist, a physical return is recorded once and answered by the existing scene, and wallet and threshold memories remain independently legible.
 - **Step 7 complete:** the final gate now produces one non-clinical personality paragraph derived from movement shape, pauses, attention, retreats, revisits and encounter sequence. The underlying observation record remains factual; no visible score or diagnosis is shown.
 - **Step 8 complete:** all 58 automated contracts pass. Live browser QA covers layered call, physical departure, threshold return recognition, keyboard menu navigation, touch completion, final reflection and Escape recovery. The prompt camera was realigned after QA exposed a wall-collision trap.
+- **Passage-release refinement complete:** the paper door is fully opaque before resolution. A terminal call or decision to continue releases a sliding passage with broad paper/pigment forms and a spatial exhale; collision remains closed until the visual opening is genuinely walkable.
 - **Next implementation step:** begin design and planning for the third original interaction.
 
 ## Objective

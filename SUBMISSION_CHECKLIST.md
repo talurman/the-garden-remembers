@@ -2,7 +2,7 @@
 
 ## Verified in this workspace — 2026-07-21
 
-- [x] `node --test tests/*.test.mjs`: 73/73 tests pass.
+- [x] `node --test tests/*.test.mjs`: 77/77 tests pass.
 - [x] Fresh static-server load succeeds.
 - [x] WebGL canvas initializes and the opening interaction works.
 - [x] Fresh browser run has no warnings or errors.
@@ -19,7 +19,7 @@
 
 ## Still requires an external account or final human review
 
-- [ ] Complete GitHub CLI authorization and push the local commits.
+- [x] GitHub CLI authorized; public `main` branch pushed and verified.
 - [ ] Optionally replace the generated narration with a personal voice recording before upload.
 - [ ] Run `/feedback` from the official Codex slash menu in the session where most work was done; paste its Session ID into Devpost.
 - [ ] Read the final Devpost copy out loud and make any personal wording changes.
@@ -33,5 +33,5 @@
 - Firebase demo: https://the-garden-remembers-tal.web.app
 - YouTube video: https://youtu.be/Ys1A-vPvSSk
 - GitHub repository: https://github.com/talurman/the-garden-remembers
-- `/feedback` Session ID:
+- `/feedback` Session ID: 019f8379-8cbe-7911-ab1f-255c14653ef6
 - Devpost submission: https://devpost.com/submit-to/30223-openai-build-week/manage/submissions/1104212-the-garden-remembers

@@ -10,10 +10,12 @@ test('different movement patterns produce different personality reflections', ()
   assert.ok(exploratory.dimensions.deliberation>direct.dimensions.deliberation);
 });
 
-test('reflection stays factual rather than inferring personality or diagnosis', () => {
+test('reflection is a nuanced personality paragraph rather than an action or color summary', () => {
   const result=calculatePersonalityReflection({movement:{distance:60,lateral:8,turn:10},events:[{type:'attention.looked'}],walletOutcome:'reported',threshold:{counts:{listen:1},resolvedAction:'call'}});
-  assert.match(result.paragraph,/garden|route|places/i);
-  assert.doesNotMatch(result.paragraph,/\byou\b|personality|trait|curious|thoughtful|decisive|comfortable|diagnos|disorder|score|percentile/i);
+  assert.match(result.paragraph,/personality/i);
+  assert.doesNotMatch(result.paragraph,/you (walked|clicked|approached|returned the wallet|knocked)/i);
+  assert.doesNotMatch(result.paragraph,/diagnos|disorder|score|percentile/i);
+  assert.doesNotMatch(result.paragraph,/\bsteps?\b|\bcolou?r\b|pigment|flowers? bloomed/i);
 });
 
 test('revisits and mixed investigation increase adaptability without exposing a score', () => {

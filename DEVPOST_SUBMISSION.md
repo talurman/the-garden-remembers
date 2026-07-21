@@ -31,7 +31,7 @@ Those actions come back later. Pigment travels across the path, planting changes
 
 The experience is a dependency-light static web app built with HTML, CSS, JavaScript modules, and Three.js. I separated movement, interaction, encounter state, and memory into testable modules. The memory pipeline has four layers: immediate echo, delayed memory, return recognition, and convergence near the ending.
 
-The central rule is traceability. Every visible world memory must point back to a factual observation. The schema rejects diagnoses, empathy scores, anxiety scores, and moral scores. A 73-test Node suite covers movement, touch and keyboard parity, encounter branches, consequence timing, factual memory, and reflection.
+The central rule is traceability. Every visible world memory must point back to a factual observation. The schema rejects diagnoses, empathy scores, anxiety scores, and moral scores. A 77-test Node suite covers movement, touch and keyboard parity, encounter branches, consequence timing, factual memory, and reflection.
 
 ## How I used Codex and GPT-5.6
 
@@ -47,7 +47,7 @@ The second challenge was continuity. The earlier version was a set of isolated s
 
 ## Accomplishments
 
-I am proud that the reflection is grounded in the journey without reading like a transaction log. I am also proud that the same experience works with keyboard, pointer, and touch input, and that 73 automated checks protect the design's non-diagnostic boundary.
+I am proud that the reflection is grounded in the journey without reading like a transaction log. I am also proud that the same experience works with keyboard, pointer, and touch input, and that 77 automated checks protect the design's non-diagnostic boundary.
 
 ## What I learned
 
