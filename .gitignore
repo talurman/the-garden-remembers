@@ -4,6 +4,7 @@ public/
 tmp/
 .firebase-cache/
 .pnpm-home/
+.tools/
 
 # Generated art-book exports are not needed to run or judge the web build.
 output/
